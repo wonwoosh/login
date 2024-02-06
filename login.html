@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Account</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <span class="close-icon" onclick="closeForm()">&#10006;</span>
+        <div class="title">Log in</div>
+        <label for="user_name">Username:</label>
+        <input type="user_name" id="user_name" name="user_name" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Log in"  onclick="redirectToAnotherPage()">
+		<div class="text">
+			<hr>
+		<p>Don't have an account yet?
+            <a href="signup.html">Create one.</a></p>
+	</div>
+
+    <script>
+        function closeForm() {
+            document.querySelector('form').style.display = 'none';
+            window.location.href='signup.html';
+        }
+        function redirectToAnotherPage() {
+            // Redirect to another HTML page
+            window.location.href = "index10-1.html";
+        }
+    </script>
+
+</body>
+
+</html>
